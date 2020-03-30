@@ -5,7 +5,7 @@ let result;
 //  soma de valores das variáveis "a" e "b"
 result = a + b;
 
-console.log(result);*/
+ console.log(result);*/
 
 function somar(a,b) {
     return a + b
