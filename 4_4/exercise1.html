@@ -58,12 +58,20 @@
             texto[i].innerHTML = texto[i].innerHTML.toUpperCase();
         }
       }
+      function showContent(element) {
+        let show = document.getElementsByTagName(element);
+        for (let i = 0; i < show.length; i++) {
+          console.log(show[i].innerHTML)
+          
+        }
+      }
 
         changeMyDescription("Me vejo trabalhando como programador ");
         changeColor('main-content','green');
         changeColor('center-content','white');
         changetext('h1','Curso de Javascript');
         changeAllTextUpper('p');
+        showContent('p')
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
