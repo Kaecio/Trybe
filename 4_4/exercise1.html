@@ -44,7 +44,12 @@
             document.getElementsByTagName('p')[1].innerHTML=text;
         }
 
+        function changeColor(element,color){
+          document.getElementsByClassName(element)[0].style.background=color;
+        }
+
         changeMyDescription("Me vejo trabalhando como programador ")
+        changeColor('main-content','green')
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
