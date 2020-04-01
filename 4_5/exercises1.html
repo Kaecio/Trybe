@@ -104,7 +104,21 @@
       let img = document.createElement("img");
       img.src = 'https://picsum.photos/200';
       img.className = "small-image";
-      addDivLeft.appendChild(img); 
+      addDivLeft.appendChild(img);
+
+      let array =["um","dois","tres",
+                  "quatro","cinco","seis",
+                  "sete","oito","nove","dez"];
+
+      let addList  = document.createElement("ul");
+      for (let numbers in array) {
+        let item = document.createElement("li");
+        item.innerHTML = numbers;
+        addList.appendChild(item);
+        }
+
+        addDivRight.appendChild(addList);
+
 
       // COLOQUE SEU CÓDIGO AQUI
     </script>
