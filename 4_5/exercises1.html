@@ -6,7 +6,7 @@
     <style>
       .main-content{
         width: 700px;
-        height: 300px;
+        height: 700px;
       }
       .center-content{
         width: 150px;
@@ -15,11 +15,11 @@
 
       .left-content{
         width: 120px;
-        height: 80px;
+        height: 220px;
       }
       .right-content{
         width: 120px;
-        height: 80px;
+        height: 220px;
       }
     </style>
     <title>Exercício 4.5</title>
@@ -100,6 +100,11 @@
       let addDivRight = document.createElement("div");
       addDivRight.className = "right-content";
       firstDiv.appendChild(addDivRight);
+
+      let img = document.createElement("img");
+      img.src = 'https://picsum.photos/200';
+      img.className = "small-image";
+      addDivLeft.appendChild(img); 
 
       // COLOQUE SEU CÓDIGO AQUI
     </script>
