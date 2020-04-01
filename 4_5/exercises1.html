@@ -8,6 +8,10 @@
         width: 700px;
         height: 300px;
       }
+      .center-content{
+        width: 150px;
+        height: 100px;
+      }
     </style>
     <title>Exercício 4.5</title>
     <style>
@@ -70,6 +74,9 @@
       firstDiv.className = "main-content";
       document.body.appendChild(firstDiv);
       
+      let childDiv = document.createElement("div");
+      childDiv.className = "center-content";
+      firstDiv.appendChild(childDiv);
 
       // COLOQUE SEU CÓDIGO AQUI
     </script>
