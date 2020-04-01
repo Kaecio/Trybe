@@ -12,6 +12,15 @@
         width: 150px;
         height: 100px;
       }
+
+      .left-content{
+        width: 120px;
+        height: 80px;
+      }
+      .right-content{
+        width: 120px;
+        height: 80px;
+      }
     </style>
     <title>Exercício 4.5</title>
     <style>
@@ -66,6 +75,8 @@
   </head>
   <body>
     <script>
+
+      /*******************primeira parte*******************/
       let title = document.createElement("h1");
       title.innerHTML = " Exercício 4.5 - JavaScript DOM ";
       document.body.appendChild(title);
@@ -77,6 +88,18 @@
       let childDiv = document.createElement("div");
       childDiv.className = "center-content";
       firstDiv.appendChild(childDiv);
+      
+      let addParagraph = document.createElement("p");
+      addParagraph.innerHTML = " Ola Mundo ";
+      childDiv.appendChild(addParagraph);
+
+      let addDivLeft = document.createElement("div");
+      addDivLeft.className = "left-content";
+      firstDiv.appendChild(addDivLeft);
+
+      let addDivRight = document.createElement("div");
+      addDivRight.className = "right-content";
+      firstDiv.appendChild(addDivRight);
 
       // COLOQUE SEU CÓDIGO AQUI
     </script>
