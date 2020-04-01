@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <style>
+      .main-content{
+        width: 700px;
+        height: 300px;
+      }
+    </style>
     <title>Exercício 4.5</title>
     <style>
       div {
@@ -59,6 +65,11 @@
       let title = document.createElement("h1");
       title.innerHTML = " Exercício 4.5 - JavaScript DOM ";
       document.body.appendChild(title);
+
+      let firstDiv = document.createElement("div");
+      firstDiv.className = "main-content";
+      document.body.appendChild(firstDiv);
+      
 
       // COLOQUE SEU CÓDIGO AQUI
     </script>
