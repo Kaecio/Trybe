@@ -99,6 +99,7 @@
 
       let addDivRight = document.createElement("div");
       addDivRight.className = "right-content";
+      addDivRight.style.margin = "auto";
       firstDiv.appendChild(addDivRight);
 
       let img = document.createElement("img");
@@ -123,12 +124,19 @@
         for (let i = 0 ; i <= 2 ; i++ ) {
         let addThreeH = document.createElement("h3");
             addThreeH.innerHTML = " texto do H3 ";
+            addThreeH.className = "description";
             firstDiv.appendChild(addThreeH);
           }
 
           /*******************segunda parte*******************/
 
           title.className = " main-class";
+
+          let remove = document.getElementById("main-content");
+          firstDiv.removeChild(remove);
+         
+
+
 
       // COLOQUE SEU CÓDIGO AQUI
     </script>
