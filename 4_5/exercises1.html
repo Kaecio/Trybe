@@ -4,20 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <style>
-      .main-content{
+      .main-content {
         width: 700px;
         height: 700px;
       }
-      .center-content{
+      .center-content {
         width: 150px;
         height: 100px;
       }
 
-      .left-content{
+      .left-content {
         width: 120px;
         height: 220px;
       }
-      .right-content{
+      .right-content {
         width: 120px;
         height: 220px;
       }
@@ -75,70 +75,94 @@
   </head>
   <body>
     <script>
-
       /*******************primeira parte*******************/
+
+      /* exercicio 1 parte 1*/
       let title = document.createElement("h1");
       title.innerHTML = " Exercício 4.5 - JavaScript DOM ";
       document.body.appendChild(title);
 
+      /* exercicio 2 parte 1*/
       let firstDiv = document.createElement("div");
       firstDiv.className = "main-content";
       document.body.appendChild(firstDiv);
-      
+
+      /*exercicio 3 parte 1 e exercicio 5 da parte 2*/
       let childDiv = document.createElement("div");
       childDiv.className = "center-content";
-      childDiv.style.backgroundColor = "green"
+      childDiv.style.backgroundColor = "green";
       firstDiv.appendChild(childDiv);
-      
+
+      /* exercicio 4 parte 1*/
       let addParagraph = document.createElement("p");
       addParagraph.innerHTML = " Ola Mundo ";
       childDiv.appendChild(addParagraph);
 
+      /* exercicio 5 parte 1*/
       let addDivLeft = document.createElement("div");
       addDivLeft.className = "left-content";
       firstDiv.appendChild(addDivLeft);
 
+      /* exercicio 6 parte 1 e exercicio 4 parte 2*/
       let addDivRight = document.createElement("div");
       addDivRight.className = "right-content";
       addDivRight.style.margin = "auto";
       firstDiv.appendChild(addDivRight);
 
+      /* execicio 7 parte 1*/
       let img = document.createElement("img");
-      img.src = 'https://picsum.photos/200';
+      img.src = "https://picsum.photos/200";
       img.className = "small-image";
       addDivLeft.appendChild(img);
 
-      let array =["um","dois","tres",
-                  "quatro","cinco","seis",
-                  "sete","oito","nove","dez"];
+      /* exercicio 8 parte 1*/
+      let array = [
+        "um",
+        "dois",
+        "tres",
+        "quatro",
+        "cinco",
+        "seis",
+        "sete",
+        "oito",
+        "nove",
+        "dez"
+      ];
 
-      let addList  = document.createElement("ul");
+      let addList = document.createElement("ul");
       for (let numbers in array) {
         let item = document.createElement("li");
-        item.innerHTML = numbers;
+        item.innerHTML = array[numbers];
         addList.appendChild(item);
-        }
-
+      }
         addDivRight.appendChild(addList);
 
+      /* exercicio 6 parte 2*/
+      addList.removeChild(addList.lastElementChild);
+      addList.removeChild(addList.lastElementChild);
 
-        for (let i = 0 ; i <= 2 ; i++ ) {
+      /* exercicio 9 parte 1 e exercicio 2 parte 2*/
+      for (let i = 0; i <= 2; i++) {
         let addThreeH = document.createElement("h3");
-            addThreeH.innerHTML = " texto do H3 ";
-            addThreeH.className = "description";
-            firstDiv.appendChild(addThreeH);
-          }
+        addThreeH.innerHTML = " texto do H3 ";
+        addThreeH.className = "description";
+        firstDiv.appendChild(addThreeH);
+      }
 
-          /*******************segunda parte*******************/
+      /*******************segunda parte*******************/
 
-          title.className = " main-class";
+      /*exercicio 1 parte 2*/
+      title.className = " main-class";
 
-          let remove = document.getElementById("main-content");
-          firstDiv.removeChild(remove);
-         
+      /* exercicio 3 da parte 2, ps. não consegui remover a div */
+      /*let remove = document.getElementById("main-content");
+          firstDiv.removeChild(remove);*/
 
+      document.getElementById("main-content").removeChild(addDivLeft);
 
+   /****** END ******/
 
+  
       // COLOQUE SEU CÓDIGO AQUI
     </script>
   </body>
