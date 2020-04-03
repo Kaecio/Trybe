@@ -1,22 +1,44 @@
 <!DOCTYPE html>
-<html>
- <head>
-  <meta charset="utf-8" />
-  <title></title>
- </head>
- <body>
- 
- <h1>Mad Libs</h1>
- 
- <ul>
-  <li>Noun: <input type="text" id="noun">
-  <li>Adjective: <input type="text" id="adjective">
-  <li>Someone's Name: <input type="text" id="person">
- </ul>
- 
- <button id="lib-button">Lib it!</button>
-  
- <div id="story"></div>
-  
- </body>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mad Libs</h1>
+
+    <ul>
+      <li>Noun: <input type="text" id="noun" /></li>
+      <li>Adjective: <input type="text" id="adjective" /></li>
+      <li>Someone's Name: <input type="text" id="person" /></li>
+    </ul>
+
+    <button id="lib-button">Lib it!</button>
+
+    <div id="story"></div>
+
+    <script>
+
+        /** exercicio 1 parte 1 **/
+        let btn = document.getElementById('lib-button');
+        let sobreNome = document.getElementById('noun');
+        let adjet = document.getElementById('adjective');
+        let nome = document.getElementById('person');
+        let divStory =  document.getElementById('story');
+
+        btn.addEventListener('click',function makeMadlid() {
+        let border = divStory.style.border = "1px solid black";
+        divStory.innerHTML = nome.value + " é uma pessoa muito atraente e " + adjet.value + " seu sobre nome " + sobreNome.value;
+        console.log(divStory);
+        divStory.style.width = "800x";
+        divStory.style.height = "40px";
+        divStory.style.textAlign = "center";
+        divStory.style.color = "red";
+        divStory.style.backgroundColor = "#E6E6FA"
+        divStory.style.marginTop = "10px";
+           document.getElementById('story').appendChild(divStory);
+        });
+        
+    </script>
+</body>
 </html>
